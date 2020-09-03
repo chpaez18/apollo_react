@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { ApolloClient, InMemoryCache, gql } from '@apollo/client'; //gql es el modulo que parsea todas las querys de manera legible
-import { ApolloProvider, Query } from '@apollo/client';
+import { ApolloClient, InMemoryCache} from '@apollo/client'; //gql es el modulo que parsea todas las querys de manera legible
+import { ApolloProvider} from '@apollo/client';
 
 
 const client = new ApolloClient({
