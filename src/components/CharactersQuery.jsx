@@ -39,12 +39,11 @@ const CharactersQuery = () => {
 
   //por ultimo solo pintamos la informacion
     return (
-        data.characters.results.map(character => (
-            <div>
-            <p>
+        data.characters.results.map((character, index) => (
+            
+            <p key={index} >
                 {character.name} : {character.status}
             </p>
-            </div>
         ))
     );
 }
